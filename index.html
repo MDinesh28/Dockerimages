@@ -1,0 +1,183 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   SpaceX Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-6 bg-gray-800">
+   <div class="flex items-center space-x-4">
+    <img alt="SpaceX logo, a stylized 'X' with a rocket" class="h-10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/2560px-SpaceX-Logo.svg.png"/>
+    <span class="text-xl font-bold">
+     SpaceX
+    </span>
+   </div>
+   <div class="hidden md:flex space-x-6">
+    <a class="hover:text-gray-400" href="#">
+     Home
+    </a>
+    <a class="hover:text-gray-400" href="#">
+     Missions
+    </a>
+    <a class="hover:text-gray-400" href="#">
+     Rockets
+    </a>
+    <a class="hover:text-gray-400" href="#">
+     About
+    </a>
+    <a class="hover:text-gray-400" href="#">
+     Contact
+    </a>
+   </div>
+   <div class="md:hidden">
+    <button class="text-gray-400 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars">
+     </i>
+    </button>
+   </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div class="hidden md:hidden" id="mobile-menu">
+   <a class="block px-4 py-2 hover:bg-gray-700" href="#">
+    Home
+   </a>
+   <a class="block px-4 py-2 hover:bg-gray-700" href="#">
+    Missions
+   </a>
+   <a class="block px-4 py-2 hover:bg-gray-700" href="#">
+    Rockets
+   </a>
+   <a class="block px-4 py-2 hover:bg-gray-700" href="#">
+    About
+   </a>
+   <a class="block px-4 py-2 hover:bg-gray-700" href="#">
+    Contact
+   </a>
+  </div>
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center text-center bg-black">
+   <img alt="A SpaceX rocket launching into space with a trail of smoke and fire" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://placehold.co/1920x1080"/>
+   <div class="relative z-10">
+    <h1 class="text-5xl md:text-7xl font-bold">
+     Explore the Universe
+    </h1>
+    <p class="mt-4 text-lg md:text-2xl">
+     Join us in our mission to make life multi-planetary
+    </p>
+    <a class="mt-8 inline-block px-6 py-3 bg-blue-600 text-white font-bold rounded hover:bg-blue-700" href="#">
+     Learn More
+    </a>
+   </div>
+  </section>
+  <!-- Missions Section -->
+  <section class="py-16 bg-gray-800">
+   <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center">
+     Our Missions
+    </h2>
+    <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+     <div class="bg-gray-700 p-6 rounded-lg">
+      <img alt="Falcon 1 rocket on the launch pad" class="w-full h-48 object-cover rounded-lg" src="https://placehold.co/400x300"/>
+      <h3 class="mt-4 text-2xl font-bold">
+       Falcon 1
+      </h3>
+      <p class="mt-2 text-gray-400">
+       The first privately developed liquid-fueled rocket to reach orbit.
+      </p>
+     </div>
+     <div class="bg-gray-700 p-6 rounded-lg">
+      <img alt="Falcon 9 rocket launching into space" class="w-full h-48 object-cover rounded-lg" src="https://placehold.co/400x300"/>
+      <h3 class="mt-4 text-2xl font-bold">
+       Falcon 9
+      </h3>
+      <p class="mt-2 text-gray-400">
+       A reusable rocket designed for the reliable and safe transport of satellites and the Dragon spacecraft into orbit.
+      </p>
+     </div>
+     <div class="bg-gray-700 p-6 rounded-lg">
+      <img alt="Falcon Heavy rocket launching with three boosters" class="w-full h-48 object-cover rounded-lg" src="https://placehold.co/400x300"/>
+      <h3 class="mt-4 text-2xl font-bold">
+       Falcon Heavy
+      </h3>
+      <p class="mt-2 text-gray-400">
+       The most powerful operational rocket in the world by a factor of two.
+      </p>
+     </div>
+     <div class="bg-gray-700 p-6 rounded-lg">
+      <img alt="Dragon spacecraft in orbit around Earth" class="w-full h-48 object-cover rounded-lg" src="https://placehold.co/400x300"/>
+      <h3 class="mt-4 text-2xl font-bold">
+       Dragon
+      </h3>
+      <p class="mt-2 text-gray-400">
+       A free-flying spacecraft designed to deliver both cargo and people to orbiting destinations.
+      </p>
+     </div>
+     <div class="bg-gray-700 p-6 rounded-lg">
+      <img alt="Starship rocket prototype on the launch pad" class="w-full h-48 object-cover rounded-lg" src="https://placehold.co/400x300"/>
+      <h3 class="mt-4 text-2xl font-bold">
+       Starship
+      </h3>
+      <p class="mt-2 text-gray-400">
+       A fully reusable spacecraft and rocket system designed to carry both crew and cargo to a variety of destinations.
+      </p>
+     </div>
+     <div class="bg-gray-700 p-6 rounded-lg">
+      <img alt="Starlink satellites being deployed in space" class="w-full h-48 object-cover rounded-lg" src="https://placehold.co/400x300"/>
+      <h3 class="mt-4 text-2xl font-bold">
+       Starlink
+      </h3>
+      <p class="mt-2 text-gray-400">
+       A satellite internet constellation being constructed to provide satellite Internet access.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-8">
+   <div class="container mx-auto px-6 text-center">
+    <div class="flex justify-center space-x-6 mb-4">
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+    <p class="text-gray-400">
+     © 2023 SpaceX. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+  </script>
+ </body>
+</html>
